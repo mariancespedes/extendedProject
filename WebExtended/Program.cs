@@ -1,8 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using WebExtended.DAL;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContext<ExtendedwebContext>(x=>
+x.UseSqlServer(builder.Configuration.GetConnectionString("SQL")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

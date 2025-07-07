@@ -56,14 +56,17 @@ z-index:10;
     
 }
 .boton{
-    background-color: #aaaaaa;
-    border: 2px solid #000000;
-    border-radius:8px;
-    color:aliceblue;
+    background-color: #aaaaaa!important;
+    border: 2px solid #000000!important;
+    border-radius:8px!important;
+    color:aliceblue!important;
+    font: bold!important;
+    
 }
 .boton:hover{
-    background-color:#999999;
-    border-color:#000000;
+    background-color:#999999!important;
+    border-color:#000000!important;
+    font:bold!important;
 }
 .seccion-about{
     margin-bottom: 100px;
